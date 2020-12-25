@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import TouchPrinter
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     window.makeKeyAndVisible()
     self.window = window
 
-    UIWindow.swiizzle()
+    TouchPrinter.start()
 
     return true
   }

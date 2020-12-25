@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,7 +15,7 @@
 		9284BB212595CE4E006101A8 /* SwipeInteractionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9284BB202595CE4E006101A8 /* SwipeInteractionController.swift */; };
 		9284BB252595CE69006101A8 /* AnimatedTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9284BB242595CE69006101A8 /* AnimatedTransitioning.swift */; };
 		9284BB282595CE85006101A8 /* PresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9284BB272595CE85006101A8 /* PresentationController.swift */; };
-		9284BB2C2595CEC1006101A8 /* TouchPrinter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9284BB2B2595CEC1006101A8 /* TouchPrinter.swift */; };
+		9284BBBC2595FBB3006101A8 /* TouchPrinter in Frameworks */ = {isa = PBXBuildFile; productRef = 9284BBBB2595FBB3006101A8 /* TouchPrinter */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +29,6 @@
 		9284BB202595CE4E006101A8 /* SwipeInteractionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeInteractionController.swift; sourceTree = "<group>"; };
 		9284BB242595CE69006101A8 /* AnimatedTransitioning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedTransitioning.swift; sourceTree = "<group>"; };
 		9284BB272595CE85006101A8 /* PresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentationController.swift; sourceTree = "<group>"; };
-		9284BB2B2595CEC1006101A8 /* TouchPrinter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchPrinter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9284BBBC2595FBB3006101A8 /* TouchPrinter in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,7 +71,6 @@
 				9284BB202595CE4E006101A8 /* SwipeInteractionController.swift */,
 				9284BB242595CE69006101A8 /* AnimatedTransitioning.swift */,
 				9284BB272595CE85006101A8 /* PresentationController.swift */,
-				9284BB2B2595CEC1006101A8 /* TouchPrinter.swift */,
 			);
 			path = CustomPresentation;
 			sourceTree = "<group>";
@@ -92,6 +91,9 @@
 			dependencies = (
 			);
 			name = CustomPresentation;
+			packageProductDependencies = (
+				9284BBBB2595FBB3006101A8 /* TouchPrinter */,
+			);
 			productName = CustomPresentation;
 			productReference = 9284BAFB259196E0006101A8 /* CustomPresentation.app */;
 			productType = "com.apple.product-type.application";
@@ -119,6 +121,9 @@
 				Base,
 			);
 			mainGroup = 9284BAF2259196E0006101A8;
+			packageReferences = (
+				9284BBBA2595FBB3006101A8 /* XCRemoteSwiftPackageReference "TouchPrinter" */,
+			);
 			productRefGroup = 9284BAFC259196E0006101A8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -147,7 +152,6 @@
 			files = (
 				9284BB03259196E0006101A8 /* ViewController.swift in Sources */,
 				9284BB252595CE69006101A8 /* AnimatedTransitioning.swift in Sources */,
-				9284BB2C2595CEC1006101A8 /* TouchPrinter.swift in Sources */,
 				9284BB1E2595CE0E006101A8 /* TransitioningCoordinator.swift in Sources */,
 				9284BAFF259196E0006101A8 /* AppDelegate.swift in Sources */,
 				9284BB212595CE4E006101A8 /* SwipeInteractionController.swift in Sources */,
@@ -345,6 +349,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9284BBBA2595FBB3006101A8 /* XCRemoteSwiftPackageReference "TouchPrinter" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/congnd/TouchPrinter";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9284BBBB2595FBB3006101A8 /* TouchPrinter */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9284BBBA2595FBB3006101A8 /* XCRemoteSwiftPackageReference "TouchPrinter" */;
+			productName = TouchPrinter;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9284BAF3259196E0006101A8 /* Project object */;
 }

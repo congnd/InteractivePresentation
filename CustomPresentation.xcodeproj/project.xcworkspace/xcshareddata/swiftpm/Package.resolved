@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "TouchPrinter",
+        "repositoryURL": "https://github.com/congnd/TouchPrinter",
+        "state": {
+          "branch": null,
+          "revision": "150e18544e41d322df2119b5995fddb1b4cee47f",
+          "version": "1.0.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
